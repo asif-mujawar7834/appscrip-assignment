@@ -13,7 +13,7 @@ const selectAllProducts = createSelector(
 );
 
 export const selectSortedProducts = createSelector(
-  [selectAllProducts, filter, (_: Store, sortOption: string) => sortOption],
+  [selectAllProducts, filter, (_: any, sortOption: string) => sortOption],
   (products, filter, sortOption) => {
     const { idealFor } = filter;
 
