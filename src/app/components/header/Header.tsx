@@ -16,9 +16,11 @@ export const Header = () => {
   const [open, setIsOpen] = useState(false);
   const { width } = useScreenSize();
 
-  useEffect(() => {
-    setIsOpen(false);
-  }, [width > 800]);
+   useEffect(() => {
+     if (width > 800) {
+       setIsOpen(false);
+     }
+   }, [width]);
 
   const toggleMenu = () => {
     setIsOpen(!open);
