@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+  position: relative;
+}
+
+.rating {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #16a34a;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.info {
+  margin-top: 12px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 14px;
+  color: #252020;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.likeButton {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.liked {
+  color: #ef4444;
+}
+
+.notLiked {
+  color: #6b7280;
+}
+
+.info p {
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 10px;
+  color: #888792;
+}
+
+@media (min-width: 768px) {
+  .productName {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+}

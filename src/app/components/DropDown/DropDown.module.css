@@ -1,0 +1,115 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 235px;
+  }
+}
+
+.button {
+  color: #252020;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selectedValue {
+  color: #252020;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media (min-width: 640px) {
+  .selectedValue {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .selectedValue {
+    font-size: 18px;
+  }
+}
+
+.icon {
+  color: #292d32;
+  font-weight: normal;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .icon {
+    font-size: 18px;
+  }
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(163, 170, 175, 0.1);
+  border: 1px solid #f3f4f6;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  right: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 100%;
+  padding: 8px;
+  text-align: right;
+  border-radius: 6px;
+}
+
+@media (min-width: 640px) {
+  .dropdown {
+    right: 0;
+    padding: 16px;
+  }
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #252020;
+  padding: 8px;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .option {
+    font-size: 14px;
+  }
+}
+
+.option:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.1);
+}
+
+.optionSelected {
+  font-weight: bold;
+}
+
+.optionNormal {
+  font-weight: normal;
+}

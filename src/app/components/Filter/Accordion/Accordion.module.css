@@ -1,0 +1,84 @@
+.headerButton {
+  width: 100%;
+  color: #252020;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.headerText {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media (min-width: 640px) {
+  .headerText {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerText {
+    font-size: 18px;
+  }
+}
+
+.icon {
+  color: #292d32;
+  font-weight: normal;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.selectedValues {
+  color: #252020;
+  font-weight: normal;
+  display: block;
+  margin-top: 4px;
+}
+
+.selectButton {
+  color: #bfc8cd;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 12px 0;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.option {
+  color: #252020;
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #38a169;
+  color: white;
+}
+
+.noOptions {
+  color: #bfc8cd;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 12px 0;
+}
