@@ -14,8 +14,8 @@ const filterSlice = createSlice({
     setSortFilter: (state, action) => {
       state.sortFilter = action.payload;
     },
-    toggleFilter: (state) => {
-      state.isFilterOpen = !state.isFilterOpen;
+    toggleFilter: (state, action) => {
+      state.isFilterOpen = action.payload;
     },
     setIdealFor: (state, action) => {
       state.idealFor = action.payload;

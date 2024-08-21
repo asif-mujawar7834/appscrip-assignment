@@ -6,9 +6,19 @@ import { useAppDispatch, useAppSelector } from "../../redux/Store";
 import { setSortFilter, toggleFilter } from "../../redux/reducers/filterSlice";
 import { selectSortedProducts } from "../../redux/selectors/productsSelector";
 import styles from "./ProductsHeader.module.css";
+import { useScreenSize } from "@/app/hooks/useScreenSize";
+import { useEffect } from "react";
 
 export const ProductsHeader = () => {
   const { sortFilter, isFilterOpen } = useAppSelector((state) => state.filter);
+  const { width } = useScreenSize();
+
+  useEffect(() => {
+    if (width < 800) {
+      dispatch(toggleFilter(false));
+    }
+  }, [width]);
+
   const products = useAppSelector((state) =>
     selectSortedProducts(state, sortFilter)
   );
@@ -18,7 +28,7 @@ export const ProductsHeader = () => {
   };
 
   const toggleSideFilter = () => {
-    dispatch(toggleFilter());
+    dispatch(toggleFilter(!isFilterOpen));
   };
 
   return (
