@@ -41,7 +41,8 @@ export const ProductCard = ({ product }: { product: productType }) => {
             </button>
           </div>
           <p className={styles.pricingInfo}>
-            Sign in or Create an account to see pricing
+            <span style={{ borderBottom: "1px solid black" }}>Sign in</span> or
+            Create an account to see pricing
           </p>
         </div>
       </div>
