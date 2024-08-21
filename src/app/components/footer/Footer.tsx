@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 import styles from "./footer.module.css";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaDotCircle, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import paymentsImage from "../../../../public/assets/images/payments.png";
+import flag from "../../../../public/assets/images/flag.png";
 import { metta_muse_links, quick_links } from "@/constants";
 export const Footer = () => {
   return (
@@ -25,7 +26,24 @@ export const Footer = () => {
           </div>
           <div>
             <h2>currency</h2>
-            <p>USD</p>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                marginTop: "15px",
+              }}
+            >
+              <Image
+                height={25}
+                width={25}
+                src={flag}
+                alt="flag"
+                style={{ height: "25px", width: "25px" }}
+              />
+              <span style={{ fontWeight: "bold" }}>.</span>
+              <span style={{ fontWeight: "bold" }}>USD</span>
+            </div>
             <p>
               Transactions will be completed in Euros and a currency reference
               is available on hover.
