@@ -19,13 +19,15 @@ export const ProductCard = ({ product }: { product: productType }) => {
         <FaStar />
       </span>
       <div className={styles.imageContainer}>
-        <Image
-          src={product.imageUrl}
-          alt={product.name}
-          width={1000}
-          height={1000}
-          className={styles.image}
-        />
+        <div className={styles.imageCard}>
+          <Image
+            src={product.imageUrl}
+            alt={product.name}
+            width={1000}
+            height={1000}
+            className={styles.image}
+          />
+        </div>
         <div className={styles.info}>
           <div className={styles.header}>
             <h1 className={styles.productName}>{product.name}</h1>

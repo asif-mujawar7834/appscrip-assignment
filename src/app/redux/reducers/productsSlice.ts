@@ -7,6 +7,11 @@ import product5Img from "../../../../public/assets/images/product5.png";
 import product6Img from "../../../../public/assets/images/product6.png";
 import product7Img from "../../../../public/assets/images/product7.png";
 import product8Img from "../../../../public/assets/images/product8.png";
+import toy1 from "../../../../public/assets/images/toy2.jpg";
+import toy2 from "../../../../public/assets/images/toy3.jpg";
+import toy3 from "../../../../public/assets/images/toy4.png";
+import toy4 from "../../../../public/assets/images/toy6.jpg";
+import toy5 from "../../../../public/assets/images/toy5.jpg";
 import { initialStateType } from "@/type";
 
 const initialState: initialStateType = {
@@ -148,6 +153,76 @@ const initialState: initialStateType = {
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 4.1,
       idealFor: ["Men", "Women"],
+      isLiked: false,
+    },
+    {
+      id: "11",
+      name: "Toy1",
+      description:
+        "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
+      price: 300,
+      category: "toys",
+      stock: 30,
+      imageUrl: toy1,
+      createdAt: "2024-03-01T15:30:00Z", // 172 days ago
+      ratings: 4.5,
+      idealFor: ["Baby & Kids"],
+      isLiked: false,
+    },
+    {
+      id: "12",
+      name: "Toy2",
+      description:
+        "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
+      price: 300,
+      category: "toys",
+      stock: 30,
+      imageUrl: toy2,
+      createdAt: "2024-03-01T15:30:00Z", // 172 days ago
+      ratings: 3.1,
+      idealFor: ["Baby & Kids"],
+      isLiked: false,
+    },
+    {
+      id: "13",
+      name: "Toy3",
+      description:
+        "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
+      price: 300,
+      category: "toys",
+      stock: 30,
+      imageUrl: toy3,
+      createdAt: "2024-03-01T15:30:00Z", // 172 days ago
+      ratings: 4.0,
+      idealFor: ["Baby & Kids"],
+      isLiked: false,
+    },
+    {
+      id: "14",
+      name: "Toy4",
+      description:
+        "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
+      price: 300,
+      category: "toys",
+      stock: 30,
+      imageUrl: toy4,
+      createdAt: "2024-03-01T15:30:00Z", // 172 days ago
+      ratings: 4.7,
+      idealFor: ["Baby & Kids"],
+      isLiked: false,
+    },
+    {
+      id: "15",
+      name: "Toy5",
+      description:
+        "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
+      price: 300,
+      category: "toys",
+      stock: 30,
+      imageUrl: toy5,
+      createdAt: "2024-03-01T15:30:00Z", // 172 days ago
+      ratings: 1.0,
+      idealFor: ["Baby & Kids"],
       isLiked: false,
     },
   ],
