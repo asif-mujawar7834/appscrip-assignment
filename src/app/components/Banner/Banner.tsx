@@ -3,9 +3,9 @@ export const Banner = () => {
   return (
     <section className={styles.banner_container}>
       <div className={styles.mobile__nav__indicator}>
-        <span>Home</span>
-        <span></span>
-        <span>Shop</span>
+        <span className={styles.home__indicator}>Home</span>
+        <span className={styles.separator}></span>
+        <span className={styles.currentlink}>Shop</span>
       </div>
       <h1>DISCOVER OUR PRODUCTS</h1>
       <p>

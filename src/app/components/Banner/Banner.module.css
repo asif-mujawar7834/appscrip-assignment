@@ -27,16 +27,16 @@
   margin-block: 20px;
 }
 
-.mobile__nav__indicator span:first-child {
+.home__indicator {
   color: #bfc8cd;
 }
 
-.mobile__nav__indicator span:nth-child(2) {
+.separator {
   background-color: #bfc8cd;
   width: 2px;
 }
 
-.mobile__nav__indicator span:first-child {
+.currentlink {
   color: #252020;
 }
 
