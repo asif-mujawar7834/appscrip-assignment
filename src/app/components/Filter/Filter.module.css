@@ -1,19 +1,26 @@
 .filterContainer {
   z-index: 9999;
-  width: 100%;
-  height: 100%;
+  left: 5px;
+  right: 5px;
   background-color: white;
   position: absolute;
-  padding: 15px 0;
+  padding: 15px 10px;
+  border-radius: 5px;
   display: flex;
+  align-self: flex-start;
   flex-direction: column;
   gap: 16px;
+  border: 1px solid grey;
 }
 
 @media (min-width: 805px) {
   .filterContainer {
     position: relative;
     width: 350px;
+    left: 0;
+    right: 0;
+    border: none;
+    padding: 15px 0;
   }
 }
 

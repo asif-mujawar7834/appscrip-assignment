@@ -7,7 +7,7 @@
 .content {
   margin-inline: 12px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   position: relative;
   gap: 16px;
 }
