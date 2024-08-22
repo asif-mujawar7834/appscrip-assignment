@@ -18,6 +18,28 @@
   margin-top: 20px;
 }
 
+.mobile__nav__indicator {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-block: 20px;
+}
+
+.mobile__nav__indicator span:first-child {
+  color: #bfc8cd;
+}
+
+.mobile__nav__indicator span:nth-child(2) {
+  background-color: #bfc8cd;
+  width: 2px;
+}
+
+.mobile__nav__indicator span:first-child {
+  color: #252020;
+}
+
 @media (max-width: 800px) {
   .banner_container {
     padding-inline: 20px;
@@ -31,5 +53,11 @@
   .banner_container p {
     line-height: 22px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 801px) {
+  .mobile__nav__indicator {
+    display: none;
   }
 }
