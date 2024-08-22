@@ -10,7 +10,7 @@
   gap: 16px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 805px) {
   .filterContainer {
     position: relative;
     width: 350px;
@@ -35,7 +35,7 @@
   font-size: 12px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .customizableText {
     font-size: 18px;
   }
