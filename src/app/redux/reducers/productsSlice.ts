@@ -1,30 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
-import product1Img from "../../../../public/assets/images/product1.png";
-import product2Img from "../../../../public/assets/images/product2.png";
-import product3Img from "../../../../public/assets/images/product3.png";
-import product4Img from "../../../../public/assets/images/product4.png";
-import product5Img from "../../../../public/assets/images/product5.png";
-import product6Img from "../../../../public/assets/images/product6.png";
-import product7Img from "../../../../public/assets/images/product7.png";
-import product8Img from "../../../../public/assets/images/product8.png";
-import toy1 from "../../../../public/assets/images/toy2.jpg";
-import toy2 from "../../../../public/assets/images/toy3.jpg";
-import toy3 from "../../../../public/assets/images/toy4.png";
-import toy4 from "../../../../public/assets/images/toy6.jpg";
-import toy5 from "../../../../public/assets/images/toy5.jpg";
+import black__leather__handbag from "../../../../public/assets/images/black__leather__handbag.png";
+import blue_striped_handbag from "../../../../public/assets/images/blue__striped__handbag.png";
+import grey_striped_handbag from "../../../../public/assets/images/grey__striped__handbag.png";
+import grey__leather__bag from "../../../../public/assets/images/grey__leather__bag.png";
+import chocolate_leather_bag from "../../../../public/assets/images/chocolate_leather_handbag.png";
+import dino_friend_teddy from "../../../../public/assets/images/dino_friend_teddy.png";
+import white__cap from "../../../../public/assets/images/white__cap.png";
+import toy__truck from "../../../../public/assets/images/toy__truck.jpg";
+import teddy__skyblue from "../../../../public/assets/images/teddy__skyblue.png";
+import toy__car from "../../../../public/assets/images/toy__car.jpg";
+import teddy__brown from "../../../../public/assets/images/teddy__brown.jpg";
+import children__cap from "../../../../public/assets/images/children__cap.jpg";
+import golden__analog__watch from "../../../../public/assets/images/golden__analog__watch.jpg";
 import { initialStateType } from "@/type";
 
 const initialState: initialStateType = {
   products: [
     {
       id: "7",
-      name: "Electric Toothbrush",
+      name: "Grey Leather Handbag",
       description:
-        "High-performance electric toothbrush with multiple brushing modes.",
+        "Elevate your style with this grey Leather Handbag. Crafted from high-quality black leather, it features a sleek, sophisticated design perfect for any occasion. The spacious interior and durable material ensure both elegance and practicality.",
       price: 39,
-      category: "Health & Personal Care",
+      category: "bags",
       stock: 45,
-      imageUrl: product7Img,
+      imageUrl: black__leather__handbag,
       createdAt: "2024-06-25T11:00:00Z", // 56 days ago
       ratings: 3,
       idealFor: ["Men"],
@@ -32,13 +32,13 @@ const initialState: initialStateType = {
     },
     {
       id: "1",
-      name: "Smartphone XYZ",
+      name: "Blue Striped Cotton Bag",
       description:
-        "Latest model with high-resolution camera and long battery life.",
+        " Add a splash of color to your look with our Blue Striped Cotton Bag. Featuring vibrant blue stripes on soft, durable cotton, this bag is perfect for casual outings or as a stylish beach tote. It offers ample space and a playful design.",
       price: 799,
-      category: "Electronics",
+      category: "bags",
       stock: 25,
-      imageUrl: product1Img,
+      imageUrl: blue_striped_handbag,
       createdAt: "2024-08-19T10:00:00Z", // 1 day ago
       ratings: 4.4,
       idealFor: ["Men", "Women"],
@@ -46,13 +46,13 @@ const initialState: initialStateType = {
     },
     {
       id: "2",
-      name: "Wireless Headphones",
+      name: "Grey Striped Handbag",
       description:
         "Noise-cancelling headphones with Bluetooth connectivity and 30-hour battery life.",
       price: 149,
       category: "Accessories",
       stock: 50,
-      imageUrl: product2Img,
+      imageUrl: grey_striped_handbag,
       createdAt: "2024-08-12T14:30:00Z", // 8 days ago
       ratings: 4,
       idealFor: ["Men", "Women"],
@@ -60,13 +60,13 @@ const initialState: initialStateType = {
     },
     {
       id: "3",
-      name: "Laptop Pro 15",
+      name: "Black Leather bag",
       description:
         "Powerful laptop with high-speed SSD, 16GB RAM, and a high-definition screen.",
       price: 1299,
       category: "Computers",
       stock: 15,
-      imageUrl: product3Img,
+      imageUrl: grey__leather__bag,
       createdAt: "2024-08-05T09:15:00Z", // 15 days ago
       ratings: 3.5,
       idealFor: ["Men", "Women"],
@@ -74,12 +74,12 @@ const initialState: initialStateType = {
     },
     {
       id: "4",
-      name: "4K Ultra HD TV",
+      name: "Light Grey Handbag",
       description: "55-inch TV with 4K resolution and smart features.",
       price: 499,
       category: "Electronics",
       stock: 10,
-      imageUrl: product4Img,
+      imageUrl: black__leather__handbag,
       createdAt: "2024-07-29T18:45:00Z", // 22 days ago
       ratings: 4.3,
       idealFor: ["Men", "Women"],
@@ -87,13 +87,13 @@ const initialState: initialStateType = {
     },
     {
       id: "5",
-      name: "Coffee Maker",
+      name: "Chocolate Leather Bag",
       description:
-        "Programmable coffee maker with a built-in grinder and multiple brew settings.",
+        "Elevate your style with our luxurious Chocolate Leather Handbag. Crafted from high-quality, rich chocolate brown leather, this handbag exudes sophistication and timeless elegance. Its supple texture and deep, warm hue make it a versatile accessory that complements both casual and formal outfits.",
       price: 89,
       category: "Home Appliances",
       stock: 35,
-      imageUrl: product5Img,
+      imageUrl: chocolate_leather_bag,
       createdAt: "2024-07-23T12:00:00Z", // 28 days ago
       ratings: 4.4,
       idealFor: ["Women"],
@@ -101,41 +101,41 @@ const initialState: initialStateType = {
     },
     {
       id: "6",
-      name: "Fitness Tracker Band",
+      name: "Dino Friend Teddy",
       description:
         "Wearable fitness tracker with heart rate monitoring and step tracking.",
       price: 59,
       category: "Wearables",
       stock: 60,
-      imageUrl: product6Img,
+      imageUrl: dino_friend_teddy,
       createdAt: "2024-07-15T07:30:00Z", // 36 days ago
       ratings: 2,
-      idealFor: ["Men", "Women"],
-      isLiked: false,
-    },
-    {
-      id: "8",
-      name: "Gaming Console",
-      description:
-        "Latest generation gaming console with enhanced graphics and exclusive games.",
-      price: 399,
-      category: "Gaming",
-      stock: 20,
-      imageUrl: product8Img,
-      createdAt: "2024-05-15T13:45:00Z", // 97 days ago
-      ratings: 1,
       idealFor: ["Baby & Kids"],
       isLiked: false,
     },
     {
-      id: "9",
-      name: "Bluetooth Speaker",
+      id: "8",
+      name: "White Cap",
       description:
-        "Portable Bluetooth speaker with excellent sound quality and long battery life.",
+        "Latest generation gaming console with enhanced graphics and exclusive games.",
+      price: 399,
+      category: "caps",
+      stock: 20,
+      imageUrl: white__cap,
+      createdAt: "2024-05-15T13:45:00Z", // 97 days ago
+      ratings: 1,
+      idealFor: ["Baby & Kids", "Men"],
+      isLiked: false,
+    },
+    {
+      id: "9",
+      name: "Grey Leather Bag",
+      description:
+        "Introducing our adorable Little Dinosaur Teddy Toy – the perfect companion for imaginative play and cuddles. This charming teddy is designed to delight children and dinosaur enthusiasts alike with its soft, plush texture and endearing design.",
       price: 79,
       category: "Accessories",
       stock: 40,
-      imageUrl: product4Img,
+      imageUrl: grey__leather__bag,
       createdAt: "2024-04-10T08:20:00Z", // 132 days ago
       ratings: 4.9,
       idealFor: ["Men"],
@@ -143,27 +143,27 @@ const initialState: initialStateType = {
     },
     {
       id: "10",
-      name: "Smartwatch X1",
+      name: "Truck Toy",
       description:
         "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
       price: 199,
-      category: "Wearables",
+      category: "toys",
       stock: 30,
-      imageUrl: product1Img,
+      imageUrl: toy__truck,
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 4.1,
-      idealFor: ["Men", "Women"],
+      idealFor: ["Baby & Kids"],
       isLiked: false,
     },
     {
       id: "11",
-      name: "Toy1",
+      name: "Car Toy",
       description:
         "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
       price: 300,
       category: "toys",
       stock: 30,
-      imageUrl: toy1,
+      imageUrl: toy__car,
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 4.5,
       idealFor: ["Baby & Kids"],
@@ -171,13 +171,13 @@ const initialState: initialStateType = {
     },
     {
       id: "12",
-      name: "Toy2",
+      name: "Sky Blue Teddy Toy",
       description:
         "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
       price: 300,
       category: "toys",
       stock: 30,
-      imageUrl: toy2,
+      imageUrl: teddy__skyblue,
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 3.1,
       idealFor: ["Baby & Kids"],
@@ -185,13 +185,13 @@ const initialState: initialStateType = {
     },
     {
       id: "13",
-      name: "Toy3",
+      name: "Brown Teddy Toy",
       description:
         "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
       price: 300,
       category: "toys",
       stock: 30,
-      imageUrl: toy3,
+      imageUrl: teddy__brown,
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 4.0,
       idealFor: ["Baby & Kids"],
@@ -199,13 +199,13 @@ const initialState: initialStateType = {
     },
     {
       id: "14",
-      name: "Toy4",
+      name: "Children Cap",
       description:
         "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
       price: 300,
       category: "toys",
       stock: 30,
-      imageUrl: toy4,
+      imageUrl: children__cap,
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 4.7,
       idealFor: ["Baby & Kids"],
@@ -213,16 +213,30 @@ const initialState: initialStateType = {
     },
     {
       id: "15",
-      name: "Toy5",
+      name: "Brown Teddy Toy",
       description:
         "Smartwatch with fitness tracking, notifications, and customizable watch faces.",
       price: 300,
       category: "toys",
       stock: 30,
-      imageUrl: toy5,
+      imageUrl: teddy__brown,
       createdAt: "2024-03-01T15:30:00Z", // 172 days ago
       ratings: 1.0,
       idealFor: ["Baby & Kids"],
+      isLiked: false,
+    },
+    {
+      id: "16",
+      name: "Golden Analog Watch",
+      description:
+        "Discover sophistication with our Golden Analog Watch. This exquisite timepiece features a luxurious gold-tone finish that exudes classic charm and modern style. The analog display offers precision and reliability, while the sleek design ensures it complements any outfit, whether for formal occasions or daily wear.",
+      price: 300,
+      category: "watches",
+      stock: 30,
+      imageUrl: golden__analog__watch,
+      createdAt: "2024-03-01T15:30:00Z", // 172 days ago
+      ratings: 1.0,
+      idealFor: ["Men"],
       isLiked: false,
     },
   ],

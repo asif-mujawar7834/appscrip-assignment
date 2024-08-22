@@ -16,11 +16,11 @@ export const Header = () => {
   const [open, setIsOpen] = useState(false);
   const { width } = useScreenSize();
 
-   useEffect(() => {
-     if (width > 800) {
-       setIsOpen(false);
-     }
-   }, [width]);
+  useEffect(() => {
+    if (width > 800) {
+      setIsOpen(false);
+    }
+  }, [width]);
 
   const toggleMenu = () => {
     setIsOpen(!open);
@@ -51,7 +51,7 @@ export const Header = () => {
           <h1 className={styles.logo}>Logo</h1>
           <div className={styles.menu_buttons}>
             <button>
-              <Image src={search} height={24} width={24} alt="search" />
+              <Image src={search} height={24} width={24} alt="search-icon" />
             </button>
             <button>
               <Image src={heart} height={24} width={24} alt="heart" />
